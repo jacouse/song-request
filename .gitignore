@@ -38,8 +38,6 @@
 /web/.gitattributes
 /web/.htaccess
 /autoload.php
-/composer.json
-/composer.lock
 /example.gitignore
 /web/index.php
 /web/LICENSE.txt
