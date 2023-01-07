@@ -19,6 +19,11 @@
         "drupal/core-composer-scaffold": "^10.0",
         "drupal/core-project-message": "^10.0",
         "drupal/core-recommended": "^10.0",
+        "drupal/feeds": "^3.0@beta",
+        "drupal/feeds_ex": "^1.0@beta",
+        "drupal/feeds_tamper": "^2.0@beta",
+        "drupal/views_bulk_operations": "^4.2",
+        "drupal/webform": "^6.2@beta",
         "drush/drush": "^11.4"
     },
     "conflict": {
