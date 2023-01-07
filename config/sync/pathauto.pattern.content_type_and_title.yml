@@ -1,0 +1,22 @@
+uuid: 2b1e602c-5986-4cc9-8ca8-34f307f00c92
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: content_type_and_title
+label: 'Content type and title'
+type: 'canonical_entities:node'
+pattern: '[node:content-type]/[node:title]'
+selection_criteria:
+  f83ed217-e42b-4ca6-aafd-7f8c5c5761bd:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: f83ed217-e42b-4ca6-aafd-7f8c5c5761bd
+    context_mapping:
+      node: node
+    bundles:
+      setlist_songs: setlist_songs
+selection_logic: and
+weight: -5
+relationships: {  }
