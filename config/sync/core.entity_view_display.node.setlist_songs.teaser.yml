@@ -1,0 +1,34 @@
+uuid: be9d9053-5c4e-4ea9-8512-e1afd307759c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.setlist_songs.body
+    - field.field.node.setlist_songs.field_artist
+    - field.field.node.setlist_songs.field_song_title
+    - node.type.setlist_songs
+  module:
+    - text
+    - user
+id: node.setlist_songs.teaser
+targetEntityType: node
+bundle: setlist_songs
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_artist: true
+  field_song_title: true

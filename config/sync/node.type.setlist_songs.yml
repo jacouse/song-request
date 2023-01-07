@@ -1,0 +1,17 @@
+uuid: 3048a576-8154-4e31-b0f9-ba411829a7e7
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Setlist Songs'
+type: setlist_songs
+description: 'Songs that are included in my songbook that people can ask me to sing'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,22 @@
+uuid: c1ea0bda-9926-4d35-beb7-1df1f9e0bf1d
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.setlist_songs
+id: node.setlist_songs.promote
+field_name: promote
+entity_type: node
+bundle: setlist_songs
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
