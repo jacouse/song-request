@@ -1,0 +1,19 @@
+uuid: 296ce41c-2ec0-43b3-9b78-a56c4c933cc1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_song_title
+    - node.type.setlist_songs
+id: node.setlist_songs.field_song_title
+field_name: field_song_title
+entity_type: node
+bundle: setlist_songs
+label: 'Song Title'
+description: 'The title of the song in the song book setlist.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
