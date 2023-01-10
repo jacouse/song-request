@@ -1,0 +1,33 @@
+uuid: 9a9fb61b-fc32-42f0-a36e-86eec3a54fb8
+langcode: en
+status: true
+dependencies:
+  config:
+    - webform.webform.choose_my_song
+  module:
+    - node
+    - webform
+  theme:
+    - olivero
+id: webform
+theme: olivero
+region: content
+weight: 0
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: Webform
+  label_display: visible
+  provider: webform
+  webform_id: choose_my_song
+  default_data: ''
+  redirect: false
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      song_themes: song_themes

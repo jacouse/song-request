@@ -1,0 +1,22 @@
+uuid: d891a97b-15c6-4eea-a29a-1a4433bce2dd
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: vocabulary_and_term_name
+label: 'Vocabulary and term name'
+type: 'canonical_entities:taxonomy_term'
+pattern: '[term:vocabulary]/[term:name]'
+selection_criteria:
+  daaae866-df2e-40ae-a8ba-2e7870528ad2:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: daaae866-df2e-40ae-a8ba-2e7870528ad2
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      song_theme: song_theme
+selection_logic: and
+weight: -5
+relationships: {  }

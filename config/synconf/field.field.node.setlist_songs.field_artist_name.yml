@@ -1,0 +1,29 @@
+uuid: f6d401c2-5611-4dfd-9034-ca2821ede90c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_artist_name
+    - node.type.setlist_songs
+    - taxonomy.vocabulary.song_artists
+id: node.setlist_songs.field_artist_name
+field_name: field_artist_name
+entity_type: node
+bundle: setlist_songs
+label: 'Artist Name'
+description: 'the name of the artists who have sang the song'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      song_artists: song_artists
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

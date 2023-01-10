@@ -1,0 +1,22 @@
+uuid: 4751085f-857b-4e9b-8845-a1335061b455
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: gettheme
+label: 'get theme'
+type: 'canonical_entities:node'
+pattern: '[node:content-type]/[node:field_song_theme_name]'
+selection_criteria:
+  b27332ba-4a7b-4b26-9455-952d4dbf1892:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: b27332ba-4a7b-4b26-9455-952d4dbf1892
+    context_mapping:
+      node: node
+    bundles:
+      song_themes: song_themes
+selection_logic: and
+weight: -5
+relationships: {  }

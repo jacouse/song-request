@@ -1,0 +1,29 @@
+uuid: 8f4ec9ad-ccb3-4f10-9ac8-74c209cb07fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_song_theme_name
+    - node.type.song_themes
+    - taxonomy.vocabulary.song_theme
+id: node.song_themes.field_song_theme_name
+field_name: field_song_theme_name
+entity_type: node
+bundle: song_themes
+label: 'Song Theme'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      song_theme: song_theme
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,32 @@
+uuid: 8dbf55d9-7722-4fda-87bd-7bf1f811fdee
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.song_themes.body
+    - field.field.node.song_themes.field_song_theme_name
+    - node.type.song_themes
+  module:
+    - text
+    - user
+id: node.song_themes.teaser
+targetEntityType: node
+bundle: song_themes
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_song_theme_name: true

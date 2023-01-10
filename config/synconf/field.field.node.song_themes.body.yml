@@ -1,0 +1,23 @@
+uuid: 7ca20724-76c3-47ac-a979-ee953cb19516
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.song_themes
+  module:
+    - text
+id: node.song_themes.body
+field_name: body
+entity_type: node
+bundle: song_themes
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary
