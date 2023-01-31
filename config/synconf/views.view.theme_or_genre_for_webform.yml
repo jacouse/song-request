@@ -4,8 +4,9 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_artist_name
-    - field.storage.node.field_song_theme
+    - field.storage.node.field_song_title
     - node.type.setlist_songs
+    - taxonomy.vocabulary.song_artists
     - taxonomy.vocabulary.song_theme
   module:
     - node
@@ -26,57 +27,10 @@ display:
     position: 0
     display_options:
       fields:
-        title:
-          id: title
-          table: node_field_data
-          field: title
-          relationship: none
-          group_type: group
-          admin_label: ''
-          entity_type: node
-          entity_field: title
-          plugin_id: field
-          label: ''
-          exclude: false
-          alter:
-            alter_text: false
-            make_link: false
-            absolute: false
-            word_boundary: false
-            ellipsis: false
-            strip_tags: false
-            trim: false
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: string
-          settings:
-            link_to_entity: true
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-        field_artist_name:
-          id: field_artist_name
-          table: node__field_artist_name
-          field: field_artist_name
+        field_song_title:
+          id: field_song_title
+          table: node__field_song_title
+          field: field_song_title
           relationship: none
           group_type: group
           admin_label: ''
@@ -122,11 +76,11 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          click_sort_column: target_id
-          type: entity_reference_label
+          click_sort_column: value
+          type: string
           settings:
-            link: true
-          group_column: target_id
+            link_to_entity: false
+          group_column: value
           group_columns: {  }
           group_rows: true
           delta_limit: 0
@@ -136,10 +90,10 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        field_song_theme:
-          id: field_song_theme
-          table: node__field_song_theme
-          field: field_song_theme
+        field_artist_name:
+          id: field_artist_name
+          table: node__field_artist_name
+          field: field_artist_name
           relationship: none
           group_type: group
           admin_label: ''
@@ -291,6 +245,7 @@ display:
             fail: 'not found'
           validate_options:
             bundles:
+              song_artists: song_artists
               song_theme: song_theme
             access: false
             operation: view
@@ -357,7 +312,7 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.field_artist_name'
-        - 'config:field.storage.node.field_song_theme'
+        - 'config:field.storage.node.field_song_title'
   entity_reference_1:
     id: entity_reference_1
     display_title: 'Entity Reference for theme or genre'
@@ -368,13 +323,14 @@ display:
         type: entity_reference
         options:
           search_fields:
-            title: title
+            field_song_title: field_song_title
+            field_artist_name: '0'
       row:
         type: entity_reference
         options:
           default_field_elements: true
           inline: {  }
-          separator: '-'
+          separator: ' -'
           hide_empty: false
       display_description: ''
       display_extenders: {  }
@@ -388,7 +344,7 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.field_artist_name'
-        - 'config:field.storage.node.field_song_theme'
+        - 'config:field.storage.node.field_song_title'
   page_1:
     id: page_1
     display_title: Page
@@ -408,4 +364,4 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.field_artist_name'
-        - 'config:field.storage.node.field_song_theme'
+        - 'config:field.storage.node.field_song_title'

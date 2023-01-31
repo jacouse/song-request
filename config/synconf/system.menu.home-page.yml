@@ -1,0 +1,8 @@
+uuid: 49f3dfdc-cd25-43ec-8bf7-50ceec43f5ec
+langcode: en
+status: true
+dependencies: {  }
+id: home-page
+label: 'Home Page'
+description: 'A menu of the main content to show on he home page'
+locked: false

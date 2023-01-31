@@ -1,0 +1,33 @@
+uuid: 342f276f-8ac9-4d3e-952c-6d734b1ea529
+langcode: en
+status: true
+dependencies:
+  config:
+    - webform.webform.browse_all_songs
+  module:
+    - node
+    - webform
+  theme:
+    - songrequest_barrio
+id: webform_3
+theme: songrequest_barrio
+region: content
+weight: -1
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: 'Song request form'
+  label_display: visible
+  provider: webform
+  webform_id: browse_all_songs
+  default_data: ''
+  redirect: false
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      setlist_songs: setlist_songs

@@ -2,8 +2,6 @@ uuid: c8bbcc32-de66-4b93-81f9-0081280601ca
 langcode: en
 status: true
 dependencies:
-  config:
-    - core.entity_view_mode.node.teaser
   module:
     - node
     - taxonomy
@@ -24,7 +22,56 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      fields: {  }
+      fields:
+        nothing:
+          id: nothing
+          table: views
+          field: nothing
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: custom
+          label: ''
+          exclude: false
+          alter:
+            alter_text: true
+            text: ' '
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: false
       pager:
         type: mini
         options:
@@ -220,9 +267,13 @@ display:
           default_row_class: true
           uses_fields: false
       row:
-        type: 'entity:node'
+        type: fields
         options:
-          view_mode: teaser
+          default_field_elements: true
+          inline:
+            nothing: nothing
+          separator: ''
+          hide_empty: true
       query:
         type: views_query
         options:
@@ -287,8 +338,8 @@ display:
       display_extenders: {  }
       path: taxonomy/term/%/feed
       displays:
-        page_1: page_1
         default: '0'
+        page_1: '0'
     cache_metadata:
       max-age: -1
       contexts:

@@ -1,15 +1,15 @@
-uuid: c434c6d6-da49-4529-8c91-c6320aa522f2
+uuid: 2a8279f9-f150-4985-9062-3ba066782478
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - olivero
+    - bootstrap_barrio
 _core:
-  default_config_hash: VhBzWb7lMRtIOg9G7VSw_0uopi-7zXeHq4vXqqV1HFE
-id: olivero_breadcrumbs
-theme: olivero
+  default_config_hash: xk8HAWIUZCzYFsUX2sNmTNDUxSoCdwrEI1tpTT5LW9s
+id: bootstrap_barrio_breadcrumbs
+theme: bootstrap_barrio
 region: breadcrumb
 weight: 0
 provider: null

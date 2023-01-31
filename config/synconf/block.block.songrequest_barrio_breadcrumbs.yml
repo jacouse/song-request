@@ -1,0 +1,22 @@
+uuid: 5e2d923c-dd10-489e-a1f0-8c7a98c1ccbe
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - songrequest_barrio
+_core:
+  default_config_hash: nt-ltB8rG0yUFGs9c4AWnUOabtPzkf3AQeidUs6kq2Q
+id: songrequest_barrio_breadcrumbs
+theme: songrequest_barrio
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

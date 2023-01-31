@@ -1,0 +1,22 @@
+uuid: f2460ffa-bd89-4b2e-8bcc-231430bc9274
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - songrequest_barrio
+_core:
+  default_config_hash: kHWsai-d42EvNxiuk75tkLubF4AGl1-opCT2A3Cdfrg
+id: songrequest_barrio_help
+theme: songrequest_barrio
+region: highlighted
+weight: -2
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

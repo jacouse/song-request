@@ -1,6 +1,6 @@
 uuid: ee08ca51-b044-43c0-ac0a-b02643926a5f
 langcode: en
-status: open
+status: closed
 dependencies: {  }
 weight: 0
 open: null
@@ -12,7 +12,23 @@ id: artists_songs
 title: 'Artists songs'
 description: ''
 category: ''
-elements: ''
+elements: |-
+  artists:
+    '#type': webform_entity_checkboxes
+    '#title': Artists
+    '#target_type': taxonomy_term
+    '#selection_handler': 'default:taxonomy_term'
+    '#selection_settings':
+      target_bundles:
+        song_artists: song_artists
+  songs:
+    '#type': webform_entity_checkboxes
+    '#title': songs
+    '#target_type': node
+    '#selection_handler': 'default:node'
+    '#selection_settings':
+      target_bundles:
+        setlist_songs: setlist_songs
 css: ''
 javascript: ''
 settings:
@@ -25,7 +41,7 @@ settings:
   page_submit_path: ''
   page_confirm_path: ''
   page_theme_name: ''
-  form_title: both
+  form_title: source_entity_webform
   form_submit_once: false
   form_open_message: ''
   form_close_message: ''

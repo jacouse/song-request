@@ -1,0 +1,22 @@
+uuid: 79082f5c-bf2b-41cf-aea5-b95431a9d9f1
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - songrequest_barrio
+_core:
+  default_config_hash: nc4sItxAZdYlgLQIezyfY0iCyLhkhG1yoQM6A3en4do
+id: songrequest_barrio_content
+theme: songrequest_barrio
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }
