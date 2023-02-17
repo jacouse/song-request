@@ -1,15 +1,15 @@
-uuid: 1e2817a7-692d-4d55-8548-dcf1f2d3138c
+uuid: cab3e625-4cb8-42ba-b0c4-f535b8e85af7
 langcode: en
 status: true
 dependencies:
   config:
-    - taxonomy.vocabulary.song_artists
+    - system.menu.main
+    - taxonomy.vocabulary.song_theme
   module:
-    - better_exposed_filters
     - taxonomy
     - user
-id: show_artists
-label: 'Show Artists'
+id: song_by_theme_or_genre
+label: 'Song by Theme or Genre'
 module: views
 description: ''
 tag: ''
@@ -22,7 +22,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Show Artists'
+      title: 'Song by Theme or Genre'
       fields:
         name:
           id: name
@@ -38,14 +38,14 @@ display:
           exclude: false
           alter:
             alter_text: false
-            text: ''
+            text: '<p class="btn btn-primary btn-lg" style="width:100%;"> {{ name }}</p>'
             make_link: false
             path: ''
             absolute: false
             external: false
             replace_spaces: false
             path_case: none
-            trim_whitespace: true
+            trim_whitespace: false
             alt: ''
             rel: ''
             link_class: ''
@@ -95,7 +95,7 @@ display:
         options:
           offset: 0
       exposed_form:
-        type: bef
+        type: basic
         options:
           submit_button: Apply
           reset_button: false
@@ -104,26 +104,6 @@ display:
           expose_sort_order: true
           sort_asc_label: Asc
           sort_desc_label: Desc
-          text_input_required: 'Select any filter and click on Apply to see results'
-          text_input_required_format: basic_html
-          bef:
-            general:
-              autosubmit: true
-              autosubmit_exclude_textfield: false
-              autosubmit_textfield_delay: 500
-              autosubmit_hide: true
-              input_required: false
-              allow_secondary: false
-              secondary_label: 'Advanced options'
-              secondary_open: false
-              reset_button_always_show: false
-            filter:
-              combine:
-                plugin_id: default
-                advanced:
-                  placeholder_text: ''
-                  collapsible: false
-                  is_secondary: false
       access:
         type: perm
         options:
@@ -133,15 +113,15 @@ display:
         options: {  }
       empty: {  }
       sorts:
-        name:
-          id: name
+        weight:
+          id: weight
           table: taxonomy_term_field_data
-          field: name
+          field: weight
           relationship: none
           group_type: group
           admin_label: ''
           entity_type: taxonomy_term
-          entity_field: name
+          entity_field: weight
           plugin_id: standard
           order: ASC
           expose:
@@ -169,54 +149,7 @@ display:
           entity_field: vid
           plugin_id: bundle
           value:
-            song_artists: song_artists
-        combine:
-          id: combine
-          table: views
-          field: combine
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: combine
-          operator: contains
-          value: ''
-          group: 1
-          exposed: true
-          expose:
-            operator_id: combine_op
-            label: 'Search for Artist or Band'
-            description: ''
-            use_operator: false
-            operator: combine_op
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: combine
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-              anonymous: '0'
-              content_editor: '0'
-              administrator: '0'
-            placeholder: ''
-          is_grouped: false
-          group_info:
-            label: 'Combine fields filter'
-            description: null
-            identifier: combine
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items:
-              1: {  }
-              2: {  }
-              3: {  }
-          fields:
-            name: name
+            song_theme: song_theme
       style:
         type: default
         options:
@@ -239,7 +172,7 @@ display:
           replica: false
           query_tags: {  }
       relationships: {  }
-      use_ajax: true
+      css_class: ''
       header: {  }
       footer: {  }
       display_extenders: {  }
@@ -248,23 +181,27 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - url
         - user.permissions
       tags: {  }
   block_1:
     id: block_1
-    display_title: 'Search artist or band'
+    display_title: Block
     display_plugin: block
     position: 2
     display_options:
-      display_description: ''
+      pager:
+        type: some
+        options:
+          offset: 0
+          items_per_page: 5
+      defaults:
+        pager: false
       display_extenders: {  }
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - url
         - user.permissions
       tags: {  }
   page_1:
@@ -274,12 +211,12 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: songs-by-artist
+      path: song-by-theme-or-genre
       menu:
-        type: none
-        title: 'Song by Artist'
-        description: 'Choose the singer or band you like and request one or more of their songs.'
-        weight: -48
+        type: normal
+        title: 'Song by genre or theme'
+        description: ''
+        weight: 0
         expanded: false
         menu_name: main
         parent: ''
@@ -289,6 +226,5 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - url
         - user.permissions
       tags: {  }

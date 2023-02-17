@@ -31,14 +31,10 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_song_theme_name:
-    type: entity_reference_autocomplete
+    type: options_buttons
     weight: 122
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   path:
     type: path
@@ -84,5 +80,10 @@ content:
       match_limit: 10
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  url_redirects:
+    weight: 50
+    region: content
+    settings: {  }
     third_party_settings: {  }
 hidden: {  }

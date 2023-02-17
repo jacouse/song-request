@@ -15,12 +15,12 @@ category: ''
 elements: |-
   your_name:
     '#type': textfield
-    '#title': Name
-    '#description': '<p>Who is this request for?</p>'
+    '#title': 'Add your name or a message'
+    '#description': '<p>Tell us who the request is for. Yourself? Or is it for someone else?</p>'
     '#multiple__no_items_message': '<p>No items entered. Please add items below.</p>'
   show_songs:
     '#type': webform_entity_checkboxes
-    '#title': 'Show songs'
+    '#title': 'Choose a song'
     '#options_display': buttons_horizontal
     '#required': true
     '#required_error': 'You must choose a song'

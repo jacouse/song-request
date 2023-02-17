@@ -8,7 +8,8 @@ features:
   favicon: true
   node_user_picture: true
 logo:
-  use_default: true
+  path: ''
+  use_default: false
 bootstrap_barrio_library: production
 bootstrap_barrio_source: bootstrap_barrio/bootstrap_cdn
 bootstrap_barrio_fluid_container: 0
@@ -75,10 +76,10 @@ bootstrap_barrio_navbar_top_class: ''
 bootstrap_barrio_navbar_class: ''
 bootstrap_barrio_navbar_top_position: ''
 bootstrap_barrio_navbar_top_color: ''
-bootstrap_barrio_navbar_top_background: ''
+bootstrap_barrio_navbar_top_background: bg-transparent
 bootstrap_barrio_navbar_position: ''
-bootstrap_barrio_navbar_color: ''
-bootstrap_barrio_navbar_background: ''
+bootstrap_barrio_navbar_color: navbar-dark
+bootstrap_barrio_navbar_background: bg-transparent
 bootstrap_barrio_navbar_flyout: true
 bootstrap_barrio_navbar_slide: false
 bootstrap_barrio_navbar_offcanvas: ''

@@ -53,14 +53,10 @@ content:
       placeholder: ''
     third_party_settings: {  }
   field_song_theme:
-    type: entity_reference_autocomplete
+    type: options_buttons
     weight: 124
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_song_title:
     type: string_textfield
@@ -114,6 +110,11 @@ content:
       match_limit: 10
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  url_redirects:
+    weight: 50
+    region: content
+    settings: {  }
     third_party_settings: {  }
 hidden:
   feeds_item: true

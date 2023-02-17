@@ -23,6 +23,7 @@ settings:
   webform_id: browse_all_songs
   default_data: ''
   redirect: false
+  lazy: false
 visibility:
   'entity_bundle:node':
     id: 'entity_bundle:node'

@@ -5,6 +5,7 @@ dependencies:
   config:
     - webform.webform.choose_my_song
   module:
+    - system
     - taxonomy
     - webform
   theme:
@@ -23,6 +24,7 @@ settings:
   webform_id: choose_my_song
   default_data: ''
   redirect: false
+  lazy: false
 visibility:
   'entity_bundle:taxonomy_term':
     id: 'entity_bundle:taxonomy_term'
@@ -32,3 +34,7 @@ visibility:
     bundles:
       song_artists: song_artists
       song_theme: song_theme
+  request_path:
+    id: request_path
+    negate: true
+    pages: "/song-theme-or-genre/search-all-songs\r\n/song-theme-or-genre/search-artists"

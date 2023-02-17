@@ -1,0 +1,15 @@
+uuid: d7da314c-c3d4-4445-ae85-d9e5dda6555f
+langcode: en
+status: true
+dependencies: {  }
+name: backghround
+label: backghround
+effects:
+  1ae6cdbc-a103-42b7-864f-ee0ba13c7098:
+    uuid: 1ae6cdbc-a103-42b7-864f-ee0ba13c7098
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1920
+      height: 1080
+      anchor: left-center

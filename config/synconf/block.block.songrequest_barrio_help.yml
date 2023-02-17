@@ -11,7 +11,7 @@ _core:
 id: songrequest_barrio_help
 theme: songrequest_barrio
 region: highlighted
-weight: -2
+weight: -5
 provider: null
 plugin: help_block
 settings:
