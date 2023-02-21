@@ -1,0 +1,21 @@
+uuid: 36ee5792-4d42-446c-8782-33a1dc6cfa2a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_song_lyrics
+    - node.type.setlist_songs
+  module:
+    - text
+id: node.setlist_songs.field_song_lyrics
+field_name: field_song_lyrics
+entity_type: node
+bundle: setlist_songs
+label: 'song lyrics'
+description: 'The lyrics of the song'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

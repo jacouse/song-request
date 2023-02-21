@@ -1,0 +1,43 @@
+/**
+ * @file
+ * Subtheme specific CSS.
+ */
+.theme-button .views-field span {
+  width: 100%;
+}
+
+.theme-button .views-field span a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.theme-button .views-field {
+  margin-top: 0.5em;
+}
+
+/** set background image **/
+
+body #page-wrapper #page #main-wrapper { /* Location of the image */
+  background-image: url(../images/songappbackgportrate.jpeg); /* Background image is centered vertically and horizontally at all times */
+  background-position: center center; /* Background image doesn’t tile */
+  background-repeat: no-repeat; /* Background image is fixed in the viewport so that it doesn’t move when the content’s height is greater than the image’s height */
+  background-attachment: fixed; /* This is what makes the background image rescale based on the container’s size */
+  background-size: cover; /* Set a background color that will be displayed while the background image is loading */
+  background-color: #464646;
+}
+
+/*
+#page-wrapper #page #header #navbar-main, #page-wrapper #page #header #navbar-top {background-color: transparent;}
+ */
+
+a.navbar-brand, a.nav-link, .navbar-dark .nav-link, a:hover.navbar-brand, :hover.nav-link {color:#ffffff;}
+#page #header {background-color: black;}
+/*body #page-wrapper #page #main-wrapper {background: none;} */
+body {color: white;}
+div label, div.webform-element-description {color: white;}
+div label span.field-content {color: black}
+#edit-show-songs--wrapper  legend > span {color: white}
+.form-item-your-name.mb-3 label {font-size: 1.5em;}
+
+ div span a br {display: none;}
+

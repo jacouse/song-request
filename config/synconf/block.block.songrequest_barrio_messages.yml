@@ -1,0 +1,22 @@
+uuid: e404fd69-60ea-4e78-a5d6-72cb9b285ed8
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - songrequest_barrio
+_core:
+  default_config_hash: qC_0YD5peIdvMY1ZDjeO3Y0bfI6XKNUeCHsxj5J59Aw
+id: songrequest_barrio_messages
+theme: songrequest_barrio
+region: highlighted
+weight: -6
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

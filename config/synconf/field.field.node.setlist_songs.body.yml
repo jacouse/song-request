@@ -1,0 +1,23 @@
+uuid: 43f45042-57e1-452d-ab5c-27406d358aa5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.setlist_songs
+  module:
+    - text
+id: node.setlist_songs.body
+field_name: body
+entity_type: node
+bundle: setlist_songs
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

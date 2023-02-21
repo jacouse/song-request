@@ -1,0 +1,22 @@
+uuid: 15a7ead1-4ffa-4a19-907f-3090997bc959
+langcode: en
+status: true
+dependencies:
+  theme:
+    - songrequest_barrio
+_core:
+  default_config_hash: 0hYeiU8E8JadTMuT0vgkOZgOBciZzFlyAHxJGbvWbg0
+id: songrequest_barrio_secondary_local_tasks
+theme: songrequest_barrio
+region: content
+weight: -3
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Secondary tabs'
+  label_display: '0'
+  provider: core
+  primary: false
+  secondary: true
+visibility: {  }

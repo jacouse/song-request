@@ -1,0 +1,40 @@
+uuid: 06ba770f-e1cb-40ce-8ef0-1544ea76db1e
+langcode: en
+status: true
+dependencies:
+  config:
+    - webform.webform.choose_my_song
+  module:
+    - system
+    - taxonomy
+    - webform
+  theme:
+    - songrequest_barrio
+id: webform_2
+theme: songrequest_barrio
+region: content
+weight: -2
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: Webform
+  label_display: '0'
+  provider: webform
+  webform_id: choose_my_song
+  default_data: ''
+  redirect: false
+  lazy: false
+visibility:
+  'entity_bundle:taxonomy_term':
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    context_mapping:
+      taxonomy_term: '@taxonomy_term.taxonomy_term_route_context:taxonomy_term'
+    bundles:
+      song_artists: song_artists
+      song_theme: song_theme
+  request_path:
+    id: request_path
+    negate: true
+    pages: "/song-theme-or-genre/search-all-songs\r\n/song-theme-or-genre/search-artists"

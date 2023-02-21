@@ -1,0 +1,27 @@
+uuid: 708a4c9a-1b9f-49a8-a6b6-4e343bba8ae8
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - songrequest_barrio
+_core:
+  default_config_hash: 5E_E9C8WXcYaS_lurvyrgxsCqkjaMVZIrIc6dmnDz_w
+id: songrequest_barrio_main_menu
+theme: songrequest_barrio
+region: primary_menu
+weight: -5
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 2
+  expand_all_items: true
+visibility: {  }

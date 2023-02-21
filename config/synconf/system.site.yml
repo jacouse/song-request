@@ -1,0 +1,14 @@
+_core:
+  default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
+langcode: en
+uuid: fec3e104-aee0-4304-8577-7d0ad453e806
+name: "Arthur's Song Requests"
+mail: admin@example.com
+slogan: 'I know all these songs'
+page:
+  403: ''
+  404: ''
+  front: /song-by-theme-or-genre
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en

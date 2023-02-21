@@ -1,0 +1,37 @@
+uuid: c6bbcaf1-4735-404e-be78-27bd209b2dad
+langcode: en
+status: true
+dependencies:
+  module:
+    - webform
+  theme:
+    - songrequest_barrio
+_core:
+  default_config_hash: 9zShD-4NWuhi8EtdU8BrBwv2Il9VlpBhwpeYhHpD2yI
+id: songrequest_barrio_page_title
+theme: songrequest_barrio
+region: content
+weight: -6
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility:
+  webform:
+    id: webform
+    negate: true
+    context_mapping:
+      webform: '@webform.webform_route_context:webform'
+    webforms: {  }
+  'entity_bundle:webform_submission':
+    id: 'entity_bundle:webform_submission'
+    negate: true
+    context_mapping:
+      webform_submission: '@webform.webform_submission_route_context:webform_submission'
+    bundles:
+      browse_all_songs: browse_all_songs
+      artists_songs: artists_songs
+      choose_my_song: choose_my_song

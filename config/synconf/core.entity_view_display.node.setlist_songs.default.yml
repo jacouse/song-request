@@ -1,0 +1,65 @@
+uuid: 43238957-f776-411f-a828-6f3c4a23169f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.setlist_songs.body
+    - field.field.node.setlist_songs.feeds_item
+    - field.field.node.setlist_songs.field_artist_name
+    - field.field.node.setlist_songs.field_song_lyrics
+    - field.field.node.setlist_songs.field_song_theme
+    - field.field.node.setlist_songs.field_song_title
+    - node.type.setlist_songs
+  module:
+    - text
+    - user
+id: node.setlist_songs.default
+targetEntityType: node
+bundle: setlist_songs
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_artist_name:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_song_lyrics:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_song_theme:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_song_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  feeds_item: true
