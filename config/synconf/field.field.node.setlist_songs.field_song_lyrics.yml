@@ -11,7 +11,7 @@ id: node.setlist_songs.field_song_lyrics
 field_name: field_song_lyrics
 entity_type: node
 bundle: setlist_songs
-label: 'song lyrics'
+label: 'Song Lyrics'
 description: 'The lyrics of the song'
 required: false
 translatable: false

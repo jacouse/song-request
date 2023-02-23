@@ -15,12 +15,13 @@ category: ''
 elements: |-
   your_name:
     '#type': textfield
-    '#title': 'Add your name or a message'
+    '#title': Name
     '#description': '<p>Tell us who the request is for. Yourself? Or is it for someone else?</p>'
     '#multiple__no_items_message': '<p>No items entered. Please add items below.</p>'
+    '#required': true
   show_songs:
     '#type': webform_entity_checkboxes
-    '#title': 'Choose a song'
+    '#title': 'Choose song'
     '#options_display': buttons_horizontal
     '#required': true
     '#required_error': 'You must choose a song'
@@ -28,7 +29,7 @@ elements: |-
     '#selection_handler': views
     '#selection_settings':
       view:
-        view_name: theme_or_genre_for_webform
+        view_name: show_all_songs
         display_name: entity_reference_1
         arguments: {  }
 css: ''

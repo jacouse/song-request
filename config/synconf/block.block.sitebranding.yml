@@ -1,4 +1,4 @@
-uuid: 208d0b0c-8b00-4cc0-9d5f-4b77b6f153a8
+uuid: 2c16dc50-5cfa-43c3-a8b1-53b05ec8b5ac
 langcode: en
 status: true
 dependencies:
@@ -6,11 +6,9 @@ dependencies:
     - system
   theme:
     - songrequest_barrio
-_core:
-  default_config_hash: WG6Yb88H7VjeM4N2WbaafQic1R9kB2ciSulA6SquGUc
-id: songrequest_barrio_site_branding
+id: sitebranding
 theme: songrequest_barrio
-region: top_header
+region: header
 weight: -6
 provider: null
 plugin: system_branding_block
@@ -19,7 +17,7 @@ settings:
   label: 'Site branding'
   label_display: '0'
   provider: system
-  use_site_logo: true
+  use_site_logo: false
   use_site_name: true
   use_site_slogan: false
 visibility: {  }

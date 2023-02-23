@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - webform.webform.choose_my_song
+    - webform.webform.browse_all_songs
   module:
     - system
     - taxonomy
@@ -21,7 +21,7 @@ settings:
   label: Webform
   label_display: '0'
   provider: webform
-  webform_id: choose_my_song
+  webform_id: browse_all_songs
   default_data: ''
   redirect: false
   lazy: false
