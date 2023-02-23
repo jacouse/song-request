@@ -24,6 +24,59 @@ display:
     display_options:
       title: 'Song by Theme or Genre'
       fields:
+        view_taxonomy_term:
+          id: view_taxonomy_term
+          table: taxonomy_term_data
+          field: view_taxonomy_term
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: taxonomy_term
+          plugin_id: entity_link
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: false
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          text: view
+          output_url_as_text: true
+          absolute: false
         name:
           id: name
           table: taxonomy_term_field_data
@@ -37,8 +90,8 @@ display:
           label: ''
           exclude: false
           alter:
-            alter_text: false
-            text: '<p class="btn btn-primary btn-lg" style="width:100%;"> {{ name }}</p>'
+            alter_text: true
+            text: '<a href="{{ view_taxonomy_term }}" class="btn btn-primary btn-lg">{{ name }}</a>'
             make_link: false
             path: ''
             absolute: false
@@ -64,7 +117,7 @@ display:
             preserve_tags: ''
             html: false
           element_type: ''
-          element_class: 'btn btn-primary btn-lg'
+          element_class: ''
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
@@ -78,7 +131,7 @@ display:
           click_sort_column: value
           type: string
           settings:
-            link_to_entity: true
+            link_to_entity: false
           group_column: value
           group_columns: {  }
           group_rows: true

@@ -2,7 +2,7 @@
  * @file
  * Subtheme specific CSS.
  */
-.theme-button .views-field span {
+.theme-button .views-field span a {
   width: 100%;
 }
 
@@ -16,14 +16,16 @@
 }
 
 /** set background image **/
+/* #page #main-wrapper */
 
 body #page-wrapper #page #main-wrapper { /* Location of the image */
   background-image: url(../images/songappbackgportrate.jpeg); /* Background image is centered vertically and horizontally at all times */
   background-position: center center; /* Background image doesn’t tile */
-  background-repeat: no-repeat; /* Background image is fixed in the viewport so that it doesn’t move when the content’s height is greater than the image’s height */
+ /* background-repeat: no-repeat; /* Background image is fixed in the viewport so that it doesn’t move when the content’s height is greater than the image’s height */
   background-attachment: fixed; /* This is what makes the background image rescale based on the container’s size */
   background-size: cover; /* Set a background color that will be displayed while the background image is loading */
-  background-color: #464646;
+ /* height: 100vh;*/
+  min-height:100vh;
 }
 
 /*
@@ -36,8 +38,38 @@ a.navbar-brand, a.nav-link, .navbar-dark .nav-link, a:hover.navbar-brand, :hover
 body {color: white;}
 div label, div.webform-element-description {color: white;}
 div label span.field-content {color: black}
-#edit-show-songs--wrapper  legend > span {color: white}
-.form-item-your-name.mb-3 label {font-size: 1.5em;}
+#edit-show-songs--wrapper  legend > span, #choose_my_song--your_name {color: white}
+.form-item-your-name.mb-3 label {font-size: 1em;}
+#browse_all_songs--name_and_message > label, #choose_my_song--show_songs > label {font-size: 1em}
 
+#block-songrequest-barrio-content div.request-list div.views-row {background-color: #003eff;}
+
+#choose_my_song--show_songs > label:after { content:" = ";}
  div span a br {display: none;}
+
+#choose_my_song--show_songs > a {color:white; font-size:1em;pointer-events: none; text-decoration: none; }
+#navbar-top .region-top-header {margin: auto;}
+#block-songrequest-barrio-main-menu {margin: auto;}
+
+#choose_my_song--your_name > label:after { content:" = ";}
+
+/*#block-songrequest-barrio-content {background-color: black;} */
+
+#block-songrequest-barrio-content .request-list .view-content.row .views-row
+{border: 2px solid white; margin-bottom: 10px;}
+
+#choose_my_song--show_songs {color: white;}
+#browse_all_songs--name_and_message {color: white;}
+#browse_all_songs--name_and_message > label:after { content:" = ";}
+#browse_all_songs--choose_song > label:after { content:" = ";}
+#browse_all_songs--choose_song > a {pointer-events: none; text-decoration: none; color: white; }
+#edit-choose-song--wrapper > legend > span {color:white;}
+.form-item-name-and-message.mb-3 > label {font-size: 1.5em;}
+.webform-options-display-buttons .form-check-input:checked ~ .form-check-label {border: 4px solid blue;}
+html, body {
+  height: 100vh;
+}
+
+.field--name-field-song-lyrics, .block-webform h2, .view-header h2, div.view-header p {color: white}
+.btn btn-primary btn-lg a {width: 100%;}
 

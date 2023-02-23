@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - webform.webform.browse_all_songs
+    - webform.webform.choose_my_song
   module:
     - node
     - webform
@@ -20,7 +20,7 @@ settings:
   label: 'Song request form'
   label_display: visible
   provider: webform
-  webform_id: browse_all_songs
+  webform_id: choose_my_song
   default_data: ''
   redirect: false
   lazy: false

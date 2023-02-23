@@ -19,19 +19,20 @@ elements: |-
     '#description': '<p>Who is this request for?</p>'
     '#size': 30
     '#multiple__no_items_message': '<p>No items entered. Please add items below.</p>'
+    '#required': true
   choose_song:
     '#type': webform_entity_checkboxes
     '#title': 'Choose song'
     '#options_display': buttons
+    '#required': true
     '#multiple__no_items_message': '<p>No items entered. Please add items below.</p>'
     '#target_type': node
     '#selection_handler': views
     '#selection_settings':
       view:
-        view_name: show_all_songs
+        view_name: theme_or_genre_for_webform
         display_name: entity_reference_1
         arguments: {  }
-    '#required': true
 css: ''
 javascript: ''
 settings:

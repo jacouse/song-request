@@ -253,7 +253,7 @@ display:
           break_phrase: false
           add_table: false
           require_value: false
-          reduce_duplicates: false
+          reduce_duplicates: true
       filters:
         status:
           id: status
