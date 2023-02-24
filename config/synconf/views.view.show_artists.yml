@@ -161,7 +161,7 @@ display:
           text_input_required_format: basic_html
           bef:
             general:
-              autosubmit: true
+              autosubmit: false
               autosubmit_exclude_textfield: false
               autosubmit_textfield_delay: 500
               autosubmit_hide: true
@@ -174,7 +174,7 @@ display:
               combine:
                 plugin_id: default
                 advanced:
-                  placeholder_text: ''
+                  placeholder_text: 'Type the name of the artist'
                   collapsible: false
                   is_secondary: false
       access:
@@ -237,8 +237,8 @@ display:
           exposed: true
           expose:
             operator_id: combine_op
-            label: 'Start typing the name of the artist or band'
-            description: 'This is where you can type the name of the artists or band you want to select'
+            label: ''
+            description: ''
             use_operator: false
             operator: combine_op
             operator_limit_selection: false
@@ -304,7 +304,7 @@ display:
           plugin_id: text
           empty: false
           content:
-            value: '<h2> Search for Artists or Band</h2>'
+            value: '<h2> Search or scroll for Band or Artist</>'
             format: basic_html
           tokenize: false
       footer: {  }

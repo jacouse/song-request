@@ -16,9 +16,9 @@ elements: |-
   your_name:
     '#type': textfield
     '#title': Name
-    '#description': '<p>Tell us who the request is for. Yourself? Or is it for someone else?</p>'
-    '#multiple__no_items_message': '<p>No items entered. Please add items below.</p>'
+    '#placeholder': 'Type the name of the person who thjis request is for'
     '#required': true
+    '#multiple__no_items_message': '<p>No items entered. Please add items below.</p>'
   show_songs:
     '#type': webform_entity_checkboxes
     '#title': 'Choose song'
@@ -136,10 +136,10 @@ settings:
   draft_loaded_message: ''
   draft_pending_single_message: ''
   draft_pending_multiple_message: ''
-  confirmation_type: page
-  confirmation_url: ''
-  confirmation_title: ''
-  confirmation_message: ''
+  confirmation_type: url_message
+  confirmation_url: /show-requests
+  confirmation_title: 'Thanks for your request'
+  confirmation_message: '<p>Thanks for your request. I will try and sing it for you as soon as I can.</p>'
   confirmation_attributes: {  }
   confirmation_back: true
   confirmation_back_label: ''

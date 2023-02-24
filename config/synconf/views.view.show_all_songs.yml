@@ -211,7 +211,7 @@ display:
           plugin_id: text
           empty: false
           content:
-            value: "<h2>Search for song or Artist</h2>\r\n<p>Start typing the name of the song or artist in the box below.</p>"
+            value: '<h2>Search or scroll  for song or Artist</h2>'
             format: basic_html
           tokenize: false
       footer: {  }
@@ -380,7 +380,7 @@ display:
           text_input_required_format: basic_html
           bef:
             general:
-              autosubmit: true
+              autosubmit: false
               autosubmit_exclude_textfield: false
               autosubmit_textfield_delay: 500
               autosubmit_hide: true
@@ -448,7 +448,7 @@ display:
               anonymous: '0'
               content_editor: '0'
               administrator: '0'
-            placeholder: ''
+            placeholder: 'Type the name of the song or artist you want to request'
           is_grouped: false
           group_info:
             label: ''

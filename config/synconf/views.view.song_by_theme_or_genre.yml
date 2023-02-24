@@ -267,9 +267,10 @@ display:
       path: song-by-theme-or-genre
       menu:
         type: normal
-        title: 'Song by genre or theme'
+        title: 'Genre or theme'
         description: ''
-        weight: 0
+        weight: -49
+        enabled: true
         expanded: false
         menu_name: main
         parent: ''
