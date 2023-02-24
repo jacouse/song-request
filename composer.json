@@ -29,6 +29,7 @@
         "drupal/taxonomy_manager": "^2.0",
         "drupal/taxonomy_menu_ui": "^3.0",
         "drupal/twig_tweak": "^3.2",
+        "drupal/typed_data": "1.x-dev@dev",
         "drupal/views_bulk_operations": "^4.2",
         "drupal/webform": "^6.2@beta",
         "drupal/webform_views": "^5.1",
