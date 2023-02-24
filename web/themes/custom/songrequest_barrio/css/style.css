@@ -39,8 +39,8 @@ body {color: white;}
 div label, div.webform-element-description {color: white;}
 div label span.field-content {color: black}
 #edit-show-songs--wrapper  legend > span, #choose_my_song--your_name {color: white}
-.form-item-your-name.mb-3 label {font-size: 1em;}
-#browse_all_songs--name_and_message > label, #choose_my_song--show_songs > label {font-size: 1em}
+/*.form-item-your-name.mb-3 label {font-size: 1em;}*/
+/*#browse_all_songs--name_and_message > label, #choose_my_song--show_songs > label {font-size: 1em}*/
 
 #block-songrequest-barrio-content div.request-list div.views-row {background-color: #003eff;}
 
@@ -56,7 +56,7 @@ div label span.field-content {color: black}
 /*#block-songrequest-barrio-content {background-color: black;} */
 
 #block-songrequest-barrio-content .request-list .view-content.row .views-row
-{border: 2px solid white; margin-bottom: 10px;}
+{border: 2px solid white; margin-bottom: 10px; color:white;}
 
 #choose_my_song--show_songs {color: white;}
 #browse_all_songs--name_and_message {color: white;}
@@ -64,7 +64,7 @@ div label span.field-content {color: black}
 #browse_all_songs--choose_song > label:after { content:" = ";}
 #browse_all_songs--choose_song > a {pointer-events: none; text-decoration: none; color: white; }
 #edit-choose-song--wrapper > legend > span {color:white;}
-.form-item-name-and-message.mb-3 > label {font-size: 1.5em;}
+/*.form-item-name-and-message.mb-3 > label {font-size: 1em;}*/
 .webform-options-display-buttons .form-check-input:checked ~ .form-check-label {border: 4px solid blue;}
 html, body {
   height: 100vh;
@@ -73,3 +73,9 @@ html, body {
 .field--name-field-song-lyrics, .block-webform h2, .view-header h2, div.view-header p {color: white}
 .btn btn-primary btn-lg a {width: 100%;}
 
+/* align vbo request managemnt boxes and label */
+
+span.vbo-del-lab {float:left;}
+.vbo-box .form-check .form-check-input {margin-left: 5px;}
+ div.view-show-requests .mb-3 {margin-bottom: 0rem!important;}
+.webform-submission-form legend span {font-size: initial;}
