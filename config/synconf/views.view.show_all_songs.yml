@@ -771,6 +771,8 @@ display:
           content: 'Displaying @start - @end of @total'
       exposed_block: false
       display_extenders: {  }
+      allow:
+        items_per_page: false
     cache_metadata:
       max-age: -1
       contexts:
