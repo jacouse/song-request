@@ -5,6 +5,7 @@ dependencies:
   config:
     - webform.webform.browse_all_songs
   module:
+    - node
     - system
     - taxonomy
     - webform
@@ -37,4 +38,11 @@ visibility:
   request_path:
     id: request_path
     negate: true
-    pages: "/song-theme-or-genre/search-all-songs\r\n/song-theme-or-genre/search-artists"
+    pages: ''
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      setlist_songs: setlist_songs
