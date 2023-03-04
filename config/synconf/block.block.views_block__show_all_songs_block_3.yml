@@ -1,0 +1,33 @@
+uuid: 031c9b55-6252-4af1-be0c-96e3e68d2529
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.show_all_songs
+  module:
+    - taxonomy
+    - views
+  theme:
+    - songrequest_barrio
+id: views_block__show_all_songs_block_3
+theme: songrequest_barrio
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:show_all_songs-block_3'
+settings:
+  id: 'views_block:show_all_songs-block_3'
+  label: ''
+  label_display: '0'
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:taxonomy_term':
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    context_mapping:
+      taxonomy_term: '@taxonomy_term.taxonomy_term_route_context:taxonomy_term'
+    bundles:
+      song_theme: song_theme

@@ -1,7 +1,9 @@
 uuid: 6f5660d8-14bd-48f1-aa43-4f63ae31f041
 langcode: en
 status: open
-dependencies: {  }
+dependencies:
+  module:
+    - webform_spam_words
 weight: 0
 open: null
 close: null
@@ -24,7 +26,10 @@ elements: |-
     '#title': 'Choose song'
     '#options_display': buttons_horizontal
     '#required': true
-    '#required_error': 'You must choose a song'
+    '#states':
+      checked:
+        ':input[name="your_name"]':
+          value: 'your name'
     '#target_type': node
     '#selection_handler': views
     '#selection_settings':
@@ -136,12 +141,15 @@ settings:
   draft_loaded_message: ''
   draft_pending_single_message: ''
   draft_pending_multiple_message: ''
-  confirmation_type: url_message
+  confirmation_type: inline
   confirmation_url: /show-requests
   confirmation_title: 'Thanks for your request'
-  confirmation_message: '<p>Thanks for your request. I will try and sing it for you as soon as I can.</p>'
-  confirmation_attributes: {  }
-  confirmation_back: true
+  confirmation_message: '<p>Thanks for your request. I will try and sing it for you as soon as I can. Why not <a href="/">request another song</a>?</p>'
+  confirmation_attributes:
+    class:
+      - alert
+      - alert-success
+  confirmation_back: false
   confirmation_back_label: ''
   confirmation_back_attributes: {  }
   confirmation_exclude_query: false
@@ -215,5 +223,14 @@ access:
     roles: {  }
     users: {  }
     permissions: {  }
-handlers: {  }
+handlers:
+  webform_spam_words:
+    id: webform_spam_words
+    handler_id: webform_spam_words
+    label: 'Webform Spam Words'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 0
+    settings: {  }
 variants: {  }
