@@ -144,7 +144,7 @@ settings:
   confirmation_type: inline
   confirmation_url: /show-requests
   confirmation_title: 'Thanks for your request'
-  confirmation_message: '<p>Thanks for your request. I will try and sing it for you as soon as I can. Why not <a href="/">request another song</a>?</p>'
+  confirmation_message: '<p>Thanks for your request. I will try and sing it for you as soon as I can. You visit the <a href="/show-requests">Show Requests</a> page or go back to the <a href="/">Home Page</a>.</p>'
   confirmation_attributes:
     class:
       - alert
