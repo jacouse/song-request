@@ -1,24 +1,24 @@
-uuid: 12829882-b5b6-408f-9306-2b821bb77fce
+uuid: cfd28e93-6584-4740-83e8-5387752bd805
 langcode: en
-status: false
+status: true
 dependencies:
   config:
-    - views.view.show_artists
+    - views.view.song_by_theme_or_genre
   module:
     - system
     - views
   theme:
     - songrequest_barrio
-id: views_block__show_artists_block_1
+id: views_block__song_by_theme_or_genre_block_2
 theme: songrequest_barrio
 region: content
 weight: 0
 provider: null
-plugin: 'views_block:show_artists-block_1'
+plugin: 'views_block:song_by_theme_or_genre-block_2'
 settings:
-  id: 'views_block:show_artists-block_1'
+  id: 'views_block:song_by_theme_or_genre-block_2'
   label: ''
-  label_display: '0'
+  label_display: visible
   provider: views
   views_label: ''
   items_per_page: none
@@ -26,4 +26,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: /song-theme-or-genre/search-artists
+    pages: /song-theme-or-genre/singer-or-band
