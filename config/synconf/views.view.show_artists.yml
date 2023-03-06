@@ -1,6 +1,6 @@
 uuid: 1e2817a7-692d-4d55-8548-dcf1f2d3138c
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - taxonomy.vocabulary.song_artists
