@@ -15,7 +15,7 @@ form_settings:
   user_register_form: false
   user_pass: false
   contact_message_feedback_form: true
-  contact_message_personal_form: false
+  contact_message_personal_form: true
   node_article_form: false
   node_page_form: false
   node_setlist_songs_form: true
