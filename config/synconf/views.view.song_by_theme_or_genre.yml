@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - system.menu.main
     - taxonomy.vocabulary.song_artists
     - taxonomy.vocabulary.song_theme
   module:
@@ -359,14 +358,16 @@ display:
     display_plugin: page
     position: 1
     display_options:
+      title: 'Choose from over 300 songs'
+      defaults:
+        title: false
       display_extenders: {  }
       path: song-by-theme-or-genre
       menu:
-        type: normal
+        type: none
         title: 'Genre or theme'
         description: ''
         weight: -49
-        enabled: false
         expanded: false
         menu_name: main
         parent: ''
@@ -387,11 +388,10 @@ display:
       display_extenders: {  }
       path: song-by-theme-or-genre
       menu:
-        type: normal
+        type: none
         title: 'Genre or theme'
         description: ''
         weight: -49
-        enabled: false
         expanded: false
         menu_name: main
         parent: ''

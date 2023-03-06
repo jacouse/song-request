@@ -88,8 +88,10 @@ span.vbo-del-lab {float:left;}
 div.js-form-item.js-form-type-textfield.form-type-textfield.js-form-item-your-name.form-item-your-name.mb-3, #edit-show-songs--wrapper, #edit-show-songs > div > div
 {margin-bottom: 0 !important;}
 
+p {color: white; font-size: 1.2rem}
+.field--name-field-song-lyrics .field__item p {font-size: 1.1rem}
 /**
- * Basic CSS Media Query Template
+ * Basic CSS Media Query Templatedev
  * TODO: I should probably use Sass...
  * Author: Michael Vieth
  * ------------------------------------------
