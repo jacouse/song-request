@@ -18,7 +18,7 @@ elements: |-
   your_name:
     '#type': textfield
     '#title': Name
-    '#placeholder': 'Type the name of the person who thjis request is for'
+    '#placeholder': 'Type the name of the person who this request is for'
     '#required': true
     '#multiple__no_items_message': '<p>No items entered. Please add items below.</p>'
   show_songs:
