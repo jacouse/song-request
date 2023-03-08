@@ -89,8 +89,11 @@ div.js-form-item.js-form-type-textfield.form-type-textfield.js-form-item-your-na
 {margin-bottom: 0 !important;}
 
 p {color: white; font-size: 1.2rem}
-.field--name-field-song-lyrics .field__item p {font-size: 1.1rem}
+.field--name-field-song-lyrics .field__item p {font-size: 1.2rem; background-color: black;}
 #navbar-main > a {margin-left: 5px}
+
+
+
 /**
  * Basic CSS Media Query Templatedev
  * TODO: I should probably use Sass...
@@ -110,8 +113,7 @@ p {color: white; font-size: 1.2rem}
 @media all and (min-width: 480px) and (max-width: 768px) {
  /*.view-header h2 {font-size: 1rem;}
   .views-field a{font-size: small;}
-  */
-}
+  */  }
 
 @media all and (max-width: 480px) { }
 

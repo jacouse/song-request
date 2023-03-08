@@ -324,7 +324,7 @@ display:
         type: normal
         title: 'Show Requests'
         description: ''
-        weight: -45
+        weight: -47
         expanded: false
         menu_name: main
         parent: ''
@@ -530,7 +530,7 @@ display:
         type: normal
         title: 'Manage Requests'
         description: ''
-        weight: -44
+        weight: -46
         expanded: false
         menu_name: main
         parent: ''
