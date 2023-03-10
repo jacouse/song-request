@@ -92,6 +92,8 @@ p {color: white; font-size: 1.2rem}
 .field--name-field-song-lyrics .field__item p {font-size: 1.2rem; background-color: black;}
 #navbar-main > a {margin-left: 5px}
 
+footer.site-footer {background: black;}
+
 
 
 /**
