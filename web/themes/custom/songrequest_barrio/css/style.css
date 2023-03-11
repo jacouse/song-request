@@ -73,7 +73,7 @@ html, body {
 .field--name-field-song-lyrics, .block-webform h2, .view-header h2, div.view-header p,#block-views-block-song-by-theme-or-genre-block-2 > h2 {color: white}
 .btn btn-primary btn-lg a {width: 100%;}
 
-.view-id-taxonomy_term .view-header h2 {text-align: center}
+.view-id-taxonomy_term .view-header h2 {text-align: center; font-size: 1.5rem}
 
 /* align vbo request managemnt boxes and label */
 
