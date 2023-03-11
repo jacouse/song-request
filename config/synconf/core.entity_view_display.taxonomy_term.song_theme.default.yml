@@ -1,0 +1,21 @@
+uuid: 980ec0ba-b18b-4235-bae1-8cab9111c035
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.song_theme
+  module:
+    - text
+id: taxonomy_term.song_theme.default
+targetEntityType: taxonomy_term
+bundle: song_theme
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }
