@@ -75,7 +75,9 @@ html, body {
 
 .view-id-taxonomy_term .view-header h2 {text-align: center; font-size: 1.5rem}
 
-/* align vbo request managemnt boxes and label */
+article p {background-color: black}
+
+  /* align vbo request managemnt boxes and label */
 
 span.vbo-del-lab {float:left;}
 .vbo-box .form-check .form-check-input {margin-left: 5px;}
