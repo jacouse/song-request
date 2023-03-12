@@ -758,8 +758,20 @@ display:
         arguments: false
         filters: false
         filter_groups: false
+        header: false
         footer: false
       display_description: ''
+      header:
+        result:
+          id: result
+          table: views
+          field: result
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: result
+          empty: false
+          content: '<h2>Search or browse @total songs<h2>'
       footer:
         result:
           id: result
