@@ -4,7 +4,7 @@ langcode: en
 uuid: fec3e104-aee0-4304-8577-7d0ad453e806
 name: "Arthur's Songbook"
 mail: arthur@arthursongrequests.com
-slogan: 'Request a song and I will sing it for you'
+slogan: 'Request a song and I will sing it for you.'
 page:
   403: ''
   404: ''

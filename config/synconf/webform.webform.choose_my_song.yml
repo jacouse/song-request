@@ -18,12 +18,16 @@ elements: |-
   your_name:
     '#type': textfield
     '#title': Name
+    '#help_title': 'Name help'
+    '#help': '<p>You can enter your name or send a message</p>'
     '#placeholder': 'Type the name of the person who this request is for'
     '#required': true
     '#multiple__no_items_message': '<p>No items entered. Please add items below.</p>'
   show_songs:
     '#type': webform_entity_checkboxes
     '#title': 'Choose song'
+    '#help_title': Choose
+    '#help': '<p>You need to click on this song to select it.</p>'
     '#options_display': buttons_horizontal
     '#required': true
     '#states':
