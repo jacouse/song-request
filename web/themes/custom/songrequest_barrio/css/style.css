@@ -97,7 +97,9 @@ p {color: white; font-size: 1.2rem}
 #navbar-main > a {margin-left: 5px}
 
 footer.site-footer {background: black;}
-
+.webform-submission-form .form-item-your-name.mb-3 label {background: black}
+legend span.fieldset-legend {background: black}
+div.view-empty p {text-align: center;background: black; padding: 1rem}
 
 
 /**

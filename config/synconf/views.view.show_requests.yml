@@ -318,6 +318,20 @@ display:
     display_plugin: page
     position: 1
     display_options:
+      empty:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: true
+          content:
+            value: '<p>There have been no requests for any songs within the last 8 hours. Why not <a href="/song-by-theme-or-genre">request a song</a>. Thanks.</p>'
+            format: basic_html
+          tokenize: false
       filters:
         webform_id:
           id: webform_id
@@ -371,11 +385,11 @@ display:
           entity_type: webform_submission
           entity_field: created
           plugin_id: date
-          operator: '>'
+          operator: between
           value:
-            min: ''
-            max: ''
-            value: '-1 day'
+            min: '- 15 hours'
+            max: '+ 24 hours'
+            value: '-1 hour'
             type: offset
           group: 1
           exposed: false
@@ -416,6 +430,7 @@ display:
         groups:
           1: AND
       defaults:
+        empty: false
         filters: false
         filter_groups: false
       display_extenders: {  }
