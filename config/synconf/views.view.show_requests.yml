@@ -318,6 +318,9 @@ display:
     display_plugin: page
     position: 1
     display_options:
+      cache:
+        type: none
+        options: {  }
       empty:
         area:
           id: area
@@ -431,9 +434,15 @@ display:
           1: AND
       defaults:
         empty: false
+        cache: false
+        use_ajax: false
         filters: false
         filter_groups: false
-      display_extenders: {  }
+      use_ajax: false
+      display_extenders:
+        views_flag_refresh:
+          flags: {  }
+          noscrolltop: 0
       path: show-requests
       menu:
         type: normal
