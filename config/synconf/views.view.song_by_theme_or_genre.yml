@@ -361,7 +361,12 @@ display:
       title: 'Choose from over 300 songs'
       defaults:
         title: false
-      display_extenders: {  }
+      display_extenders:
+        metatag_display_extender:
+          metatags:
+            title: "Arthur Wilson's Songbook - Choose from over 300 songs"
+            description: "Choose a song from Arthur Wilson's songbook, a collection of over 320 songs by various singers and bands. If you are at one of Arthur's Wilsons gigs, you can go to this website, browse through the list of songs, or search by song title or artists and submit a request for that or any other song. You can also browse through songs grouped together by theme such as people, places, names, genre, etc."
+          tokenize: false
       path: song-by-theme-or-genre
       menu:
         type: none
