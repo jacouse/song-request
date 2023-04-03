@@ -36,6 +36,7 @@
         "drupal/webform": "^6.2@beta",
         "drupal/webform_spam_words": "^2.0",
         "drupal/webform_views": "^5.1",
+        "drupal/xmlsitemap": "1.x-dev@dev",
         "drush/drush": "^11.4"
     },
     "conflict": {

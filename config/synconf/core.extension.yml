@@ -71,8 +71,11 @@ module:
   webform_ui: 0
   webform_views: 0
   webform_views_example: 0
+  xmlsitemap_custom: 0
+  xmlsitemap_engines: 0
   pathauto: 1
   webform_bootstrap: 1
+  xmlsitemap: 1
   views: 10
   standard: 1000
 theme:
