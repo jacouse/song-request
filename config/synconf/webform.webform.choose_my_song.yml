@@ -33,7 +33,7 @@ elements: |-
     '#states':
       checked:
         ':input[name="your_name"]':
-          value: 'your name'
+          filled: true
     '#target_type': node
     '#selection_handler': views
     '#selection_settings':
