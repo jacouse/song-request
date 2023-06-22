@@ -666,6 +666,20 @@ display:
                   placeholder_text: ''
                   collapsible: false
                   is_secondary: false
+      empty:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: true
+          content:
+            value: '<P>No song or artist was found. Try again.</P>'
+            format: basic_html
+          tokenize: false
       arguments: {  }
       filters:
         status:
@@ -751,6 +765,7 @@ display:
           separator: ''
           hide_empty: false
       defaults:
+        empty: false
         exposed_form: false
         style: false
         row: false
