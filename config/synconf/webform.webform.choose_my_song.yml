@@ -3,7 +3,11 @@ langcode: en
 status: open
 dependencies:
   module:
+    - honeypot
     - webform_spam_words
+third_party_settings:
+  honeypot:
+    time_restriction: true
 weight: 0
 open: null
 close: null
@@ -13,7 +17,7 @@ archive: false
 id: choose_my_song
 title: 'Choose my song'
 description: ''
-category: ''
+categories: {  }
 elements: |-
   your_name:
     '#type': textfield
@@ -22,7 +26,6 @@ elements: |-
     '#help': '<p>You can enter your name or send a message</p>'
     '#placeholder': 'Type the name of the person who this request is for'
     '#required': true
-    '#multiple__no_items_message': '<p>No items entered. Please add items below.</p>'
   show_songs:
     '#type': webform_entity_checkboxes
     '#title': 'Choose song'
@@ -44,7 +47,7 @@ elements: |-
 css: ''
 javascript: ''
 settings:
-  ajax: false
+  ajax: true
   ajax_scroll_top: form
   ajax_progress_type: ''
   ajax_effect: ''
