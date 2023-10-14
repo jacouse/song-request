@@ -13,7 +13,7 @@ archive: false
 id: choose_my_song
 title: 'Choose my song'
 description: ''
-category: ''
+categories: {  }
 elements: |-
   your_name:
     '#type': textfield
@@ -22,7 +22,6 @@ elements: |-
     '#help': '<p>You can enter your name or send a message</p>'
     '#placeholder': 'Type the name of the person who this request is for'
     '#required': true
-    '#multiple__no_items_message': '<p>No items entered. Please add items below.</p>'
   show_songs:
     '#type': webform_entity_checkboxes
     '#title': 'Choose song'
@@ -53,7 +52,7 @@ settings:
   page_submit_path: ''
   page_confirm_path: ''
   page_theme_name: ''
-  form_title: both
+  form_title: source_entity_webform
   form_submit_once: false
   form_open_message: ''
   form_close_message: ''

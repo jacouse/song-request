@@ -11,7 +11,7 @@ archive: false
 id: artists_songs
 title: 'Artists songs'
 description: ''
-category: ''
+categories: {  }
 elements: |-
   artists:
     '#type': webform_entity_checkboxes

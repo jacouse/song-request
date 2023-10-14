@@ -11,7 +11,7 @@ archive: false
 id: browse_all_songs
 title: 'Browse all songs'
 description: '<p>A form to show the option of choosing from all the songs</p>'
-category: ''
+categories: {  }
 elements: |-
   name_and_message:
     '#type': textfield
@@ -19,13 +19,11 @@ elements: |-
     '#size': 30
     '#placeholder': 'Enter your name or the name of the person who this request is for'
     '#required': true
-    '#multiple__no_items_message': '<p>No items entered. Please add items below.</p>'
   choose_song:
     '#type': webform_entity_checkboxes
     '#title': 'Choose song'
     '#options_display': buttons
     '#required': true
-    '#multiple__no_items_message': '<p>No items entered. Please add items below.</p>'
     '#target_type': node
     '#selection_handler': views
     '#selection_settings':
