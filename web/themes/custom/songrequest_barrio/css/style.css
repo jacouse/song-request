@@ -160,3 +160,9 @@ only screen and (min-device-pixel-ratio: 1.5) {
 /* iPad Landscape */
 @media screen and (min-device-width: 481px) and (orientation:landscape) {
 }
+
+#block-songrequest-barrio-content table td a {color:#ffffff; background-color: #000000;
+}
+
+#block-songrequest-barrio-content table td {color:#ffffff; background-color: #000000;
+}

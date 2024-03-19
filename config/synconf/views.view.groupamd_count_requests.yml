@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - views.view.totals
     - webform.webform.choose_my_song
   module:
     - webform
@@ -32,7 +33,7 @@ display:
           admin_label: ''
           plugin_id: webform_submission_field
           label: ''
-          exclude: true
+          exclude: false
           alter:
             alter_text: false
             text: ''
@@ -192,22 +193,40 @@ display:
           value:
             choose_my_song: choose_my_song
       style:
-        type: default
+        type: table
         options:
-          grouping:
-            -
-              field: webform_submission_value
-              rendered: true
-              rendered_strip: false
+          grouping: {  }
           row_class: ''
-          default_row_class: true
+          default_row_class: false
+          columns:
+            webform_submission_value: webform_submission_value
+            webform_submission_value_1: webform_submission_value_1
+          default: '-1'
+          info:
+            webform_submission_value:
+              align: views-align-left
+              separator: ''
+              empty_column: false
+              responsive: ''
+            webform_submission_value_1:
+              align: views-align-center
+              separator: ''
+              empty_column: false
+              responsive: ''
+          override: true
+          sticky: false
+          summary: 'Show the total requests for each song'
+          empty_table: false
+          caption: 'Show the total requests for each song'
+          description: 'Group together submission data to show the most popular requests.'
       row:
         type: fields
         options:
           default_field_elements: true
           inline:
+            webform_submission_value: webform_submission_value
             webform_submission_value_1: webform_submission_value_1
-          separator: ''
+          separator: ' - total requests = '
           hide_empty: false
       query:
         type: views_query
@@ -219,7 +238,31 @@ display:
           query_tags: {  }
       relationships: {  }
       group_by: true
-      header: {  }
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: false
+          content:
+            value: '<h2> The most requested songs</h2>'
+            format: basic_html
+          tokenize: false
+        view:
+          id: view
+          table: views
+          field: view
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: view
+          empty: false
+          view_to_insert: 'totals:default'
+          inherit_arguments: false
       footer: {  }
       display_extenders: {  }
     cache_metadata:
